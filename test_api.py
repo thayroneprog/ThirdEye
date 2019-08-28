@@ -7,13 +7,13 @@ url = "http://127.0.0.1:8000/playerdetect"
 
 # use our face detection API to find faces in images via image URL
 image = cv2.imread("obama.jpg")
-payload = {"url": "http://www.pyimagesearch.com/wp-content/uploads/2015/05/obama.jpg"}
-r = requests.post(url, data=payload).json()
+#payload = {"url": "http://www.pyimagesearch.com/wp-content/uploads/2015/05/obama.jpg"}
+#r = requests.post(url, data=payload).json()
 #print "obama.jpg:{}".format(r)
 
 # loop over the faces and draw them on the image
-for (startX, startY, endX, endY) in r["faces"]:
-	cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
+#for (startX, startY, endX, endY) in r["faces"]:
+#	cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
 
 # show the output image
 cv2.imshow("obama.jpg", image)
