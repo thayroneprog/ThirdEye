@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,29 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Third Eye Project</title>
-    <link rel="stylesheet" href="{% static 'css/style.scss' %}" />
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<body>
-    <div class="container">
-        <section class="background">
-          <div class="content-wrapper">
-            <p class="content-title">Full Page Parallax Effect</p>
-            <p class="content-subtitle">Scroll down and up to see the effect!</p>
-          </div>
-        </section>
-        <section class="background">
-          <div class="content-wrapper">
-            <p class="content-title">Cras lacinia non eros nec semper.</p>
-            <p class="content-subtitle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.</p>
-          </div>
-        </section>
-        <section class="background">
-          <div class="content-wrapper">
-            <p class="content-title">Etiam consequat lectus.</p>
-            <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
-          </div>
-        </section>
+<body id="bg" style="background-image: url('{% static "images/bg.jpg" %}')">
+    <div class="card" id="card-principal">
+      <div class="card-header bg-dark">
+          <img class="logodoctum" src="static/images/doctum-logo-white.png" alt="Logo Rede de Ensino Doctum">
       </div>
+      <div class="card-body">
+        <h1 class="card-title">TCC - Third Eye </h1>
+        <p class="card-text">
+          Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo 
+          é motivis de denguis. Interagi no mé, cursus quis, vehicula ac nisi. Nec 
+          orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non 
+          ipsum felis. Per aumento de cachacis, eu reclamis.
+          Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo 
+          é motivis de denguis. Interagi no mé, cursus quis, vehicula ac nisi. Nec 
+          orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non 
+          ipsum felis. Per aumento de cachacis, eu reclamis.
+          Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo 
+          é motivis de denguis. Interagi no mé, cursus quis, vehicula ac nisi. Nec 
+          orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non 
+          ipsum felis. Per aumento de cachacis, eu reclamis.
+        </p>
+        <hr>
+        <div class="container">
+            <div class="row">
+              <div class="col" >
+                <h2 class="card-text" id="text-layout-principal">Professor Orientador:</h2>
+                <div class="card" id="cards-layout" style="width: 18rem;">
+                    <img class="card-img-top" src="static/images/21321981.jpg" alt="Tales Souza">
+                    <div class="card-body">
+                      <h4 class="card-title">Tales Souza</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <h2 class="card-text">Alunos:</h2>
+                <div class="card-group" id="cards-layout">
+                    <div class="card">
+                      <img class="card-img-top" src="static/images/30848464.jpg" alt="Vinicius Andrade">
+                      <div class="card-body">
+                        <h5 class="card-title">Vinicius Andrade</h5>
+                        <p class="card-text">This is a wider card with supporting 
+                          text below as a natural lead-in to additional 
+                          content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="static/images/27380564.jpg" alt="Thayrone Marques">
+                      <div class="card-body">
+                        <h5 class="card-title">Thayrone Marques</h5>
+                        <p class="card-text">This card has supporting text below 
+                          as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        <a href="{% url 'index_view' %}"class="btn btn-primary">Entrar!</a>
+      </div>
+    </div>
 </body>
 </html>

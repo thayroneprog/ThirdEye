@@ -1,0 +1,27 @@
+#card-principal{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#cards-layout{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+#text-layout-principal{
+    text-align: center
+}
+
+.logodoctum{
+    margin: -2%;
+    margin-top: -8%;
+    margin-bottom: -8%;
+}
+
+.card-text{
+    text-align: justify;
+}
